@@ -59,57 +59,43 @@ Menus:
     #   weight: 2
 
 params:
-  title: "Hugo Profile"
-  description: Text about my cool site
-  # staticPath: ""  # The path to serve the static files from
+  title: "Suneel Sarswat, PhD"
+  description: "Formal Verification • Market Micro-structure • AI / ML in Securities Markets"
   favicon: "/fav.png"
 
-  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
-  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
-  # Note the lack of "" in true, it should be of boolean type.
   useBootstrapCDN: false
-
-  # If you want to load dynamically responsive images from Cloudinary
-  # This requires your images to be uploaded + hosted on Cloudinary
-  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
-  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
-
-  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
   mathjax: false
-
-  # Whether the fade animations on the home page will be enabled
   animate: true
 
   theme:
-    # disableThemeToggle: true
-    # defaultTheme: "light" # dark
+    disableThemeToggle: true      # lock to light mode
+    defaultTheme: "light"
 
   font:
-    fontSize: 1rem # default: 1rem
-    fontWeight: 400 # default: 400
-    lineHeight: 1.5 # default: 1.5
-    textAlign: left # default: left
+    fontSize: 1.125rem            # 18 px body
+    fontWeight: 400
+    lineHeight: 1.5
+    textAlign: left
+    fontFamily: "Inter, sans-serif"  # Google font
 
-  # color preference
-  # When using hex codes for colors, quotations must be used along with the # sign
-  # color:
-  #   textColor: "#343a40"
-  #   secondaryTextColor: "#6c757d"
-  #   textLinkColor: "#007bff"
-  #   backgroundColor: "#eaedf0"
-  #   secondaryBackgroundColor: "#64ffda1a"
-  #   primaryColor: "#007bff"
-  #   secondaryColor: "#f8f9fa"
+  color:
+    textColor: "#212529"
+    secondaryTextColor: "#6c757d"
+    textLinkColor: "#003366"
+    backgroundColor: "#ffffff"
+    secondaryBackgroundColor: "#f7f7f7"
+    primaryColor: "#003366"        # McKinsey navy
+    secondaryColor: "#f7f7f7"
 
-  #   darkmode:
-  #     textColor: "#e4e6eb"
-  #     secondaryTextColor: "#b0b3b8"
-  #     textLinkColor: "#ffffff"
-  #     backgroundColor: "#18191a"
-  #     secondaryBackgroundColor: "#212529"
-  #     primaryColor: "#ffffff"
-  #     secondaryColor: "#212529"
-
+    darkmode:
+      textColor: "#e4e6eb"
+      secondaryTextColor: "#b0b3b8"
+      textLinkColor: "#ffffff"
+      backgroundColor: "#18191a"
+      secondaryBackgroundColor: "#212529"
+      primaryColor: "#ffffff"
+      secondaryColor: "#212529"
+      
   # If you want to customize the menu, you can change it here
   navbar:
     align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
@@ -134,9 +120,9 @@ params:
   hero:
     enable: true
     intro: "Hi, my name is"
-    title: "Isabella."
-    subtitle: "I build things for the web"
-    content: "A passionate web app developer. I tend to make use of modern web technologies to build websites that look great, feel fantastic, and function correctly."
+    title: "Suneel Sarswat, PhD"
+    subtitle: "Formal Verification • Market Micro-structure • AI / ML in Securities Markets"
+    content: "I create formal fintech."
     image: /images/hero.svg
     bottomImage:
       enable: true
@@ -147,6 +133,8 @@ params:
       url: "#"
       download: true
       newPage: false
+      text: "Download One-Page CV"
+      url: "/files/cv.pdf"
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
