@@ -151,12 +151,12 @@ params:
     title: "About Me"
     image: "/images/me.jpg"
     content: |-
-      Suneel Sarswat bridges rigorous theory and live-market reality.  
-During his PhD at TIFR, he and his collaborators produced the world’s first fully-verified checker that detects violations in exchange logs (25 k+ Rocq lines) and six top-tier publications. He has also consulted on two Regulatory technology projects—automated collusion detection and a confidential front-running investigation—and advised the Ministry of Finance on credit-rating-agency performance.
+	Suneel Sarswat bridges rigorous theory and live-market reality.  
+	During his PhD at TIFR, he and his collaborators produced the world’s first fully-verified checker that detects violations in exchange logs (25 k+ Rocq lines) and six 	top-tier publications. He has also consulted on two Regulatory technology projects—automated collusion detection and a confidential front-running investigation—and advised the Ministry of Finance on credit-rating-agency performance.
 
-For more than a decade he has trained officers from RBI, SEBI, NSE, BSE, etc. and taught students of NISM, IIM, etc. how to turn data science, machine learning and financial analytics into actionable market insight.
+	For more than a decade he has trained officers from RBI, SEBI, NSE, BSE, etc. and taught students of NISM, IIM, etc. how to turn data science, machine learning and financial analytics into actionable market insight.
 
-Today he is Adjunct Faculty at NISM and an independent consultant and researcher specializing in advanced technology and its applications in finance.
+	Today he is Adjunct Faculty at NISM and an independent consultant and researcher specializing in advanced technology and its applications in finance.
 
     skills:
       enable: true
