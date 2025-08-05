@@ -18,22 +18,27 @@ markup:
 
 Menus:
   main:
-#    - identifier: blog
-#      name: Blog
-#      title: Latest posts
-#      url: /blogs
-#      weight: 1
     - identifier: about
-      name: CV / About
-      title: CV download
+      name: About
+      title: Full biography
+      url: /about
+      weight: 1
+    - identifier: cv
+      name: CV
+      title: Download one-page CV
       url: /files/cv.pdf
       weight: 2
+    - identifier: publications
+      name: Publications
+      title: Research papers (BibTeX)
+      url: /publications
+      weight: 3
 
 params:
   title: "Dr. Suneel Sarswat"
   description: "Formal Verification • Regulatory Technology • Quantitative Finance"
   favicon: "/favicon.ico"
-  backgroundDots: true   # to removes the 16 '+' dots, make this false
+  backgroundDots: false
 
   useBootstrapCDN: false
   mathjax: true
@@ -78,7 +83,6 @@ params:
     menus:
       disableAbout: false
       disableExperience: false
-      disablePublications: false
       disableEducation: false
       disableProjects: false
       disableAchievements: false
@@ -87,9 +91,8 @@ params:
   sections:
     - home
     - about
-    - publications
-    - education
     - experience
+    - education
     - projects
     - achievements
     - contact
@@ -121,10 +124,8 @@ params:
   about:
     enable: true
     title: "About Me"
-#    image: "/images/me.jpg"
     content: |-
       Dr. Suneel Sarswat is a computer-scientist and regulatory-technology expert specialising in formal verification of financial systems.  His PhD work at TIFR produced the world’s first fully-verified exchange-matching compliance checker (25 000+ lines of Rocq code) and six top-tier publications.  He has consulted for the Ministry of Finance and SEBI on market-surveillance algorithms and has trained 500+ regulators and bankers in advanced analytics.
-
     skills:
       enable: true
       title: "Expertise"
@@ -146,14 +147,14 @@ params:
         content: "Design and deliver executive programmes on quantitative finance, data analysis and ML in capital markets."
       - job: "Analytics Consultant"
         company: "Decimal Point Analytics"
-        companyUrl: "https://decimalpointanalytics.com/"
+        companyUrl: "https://decimalpointanalytics.com"
         date: "2020–2024"
         content: "Led machine-learning engagements for market-manipulation detection and credit-risk modelling."
       - job: "Research Scholar"
         company: "Tata Institute of Fundamental Research (TIFR)"
-        companyUrl: "https://www.tcs.tifr.res.in/web/"
+        companyUrl: "https://www.tcs.tifr.res.in"
         date: "2012–2017"
-	content: "PhD research on verified exchange-matching algorithms; 25 k+ lines Coq code, 6 premier venue papers."
+        content: "PhD research on verified exchange-matching algorithms; 25 k+ lines Coq code, 6 premier venue papers."
       - job: "Research Analyst"
         company: "Bank of America"
         companyUrl: "https://www.ml.com/wealthmanagement.html"
@@ -180,29 +181,7 @@ params:
           name: "Indian Institute of Technology (IIT), Mumbai"
           url: "https://www.iitb.ac.in"
         date: "2005"
-	content: "Wavelet methods in time series"
-
-  publications:
-    enable: true
-    items:
-      - title: "PhD in Computer Science"
-        school:
-          name: "Tata Institute of Fundamental Research (TIFR), Mumbai"
-          url: "https://www.tifr.res.in"
-        date: "2024"
-        content: "A Formal Approach to Exchange Design and Regulation"
-      - title: "M.Sc. in Computer Science"
-        school:
-          name: "Tata Institute of Fundamental Research (TIFR), Mumbai"
-          url: "https://www.tifr.res.in"
-        date: "2015"
-        content: "Conflict-free colouring of guards in polygons"
-      - title: "M.Sc. in Applied Statistics"
-        school:
-          name: "Indian Institute of Technology (IIT), Mumbai"
-          url: "https://www.iitb.ac.in"
-        date: "2005"
-	content: "Wavelet methods in time series"
+        content: "Wavelet methods in time series"
 
   projects:
     enable: true
@@ -239,18 +218,4 @@ params:
 
   footer:
     recentPosts:
-      path: "blogs"
-      count: 3
-      title: Recent Posts
       enable: false
-    socialNetworks:
-      github: "https://github.com/suneel-sarswat"
-      linkedin: "https://www.linkedin.com/in/suneel-sarswat-3398a86/"
-
-
-  singlePages:
-    scrollprogress:
-      enable: true   # keeps the thin scroll bar
-    readTime:
-      enable: true
-      content: "min read"
