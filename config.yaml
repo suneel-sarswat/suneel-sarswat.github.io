@@ -18,15 +18,15 @@ markup:
 
 Menus:
   main:
-    - identifier: blog
-      name: Blog
-      title: Latest posts
-      url: /blogs
-      weight: 1
+#    - identifier: blog
+#      name: Blog
+#      title: Latest posts
+#      url: /blogs
+#      weight: 1
     - identifier: about
       name: CV / About
-      title: Full bio & CV download
-      url: /about
+      title: CV download
+      url: /files/cv.pdf
       weight: 2
 
 params:
@@ -78,6 +78,7 @@ params:
     menus:
       disableAbout: false
       disableExperience: false
+      disablePublications: false
       disableEducation: false
       disableProjects: false
       disableAchievements: false
@@ -86,6 +87,7 @@ params:
   sections:
     - home
     - about
+    - publications
     - education
     - experience
     - projects
@@ -119,7 +121,7 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: "/images/me.jpg"
+#    image: "/images/me.jpg"
     content: |-
       Dr. Suneel Sarswat is a computer-scientist and regulatory-technology expert specialising in formal verification of financial systems.  His PhD work at TIFR produced the world’s first fully-verified exchange-matching compliance checker (25 000+ lines of Rocq code) and six top-tier publications.  He has consulted for the Ministry of Finance and SEBI on market-surveillance algorithms and has trained 500+ regulators and bankers in advanced analytics.
 
@@ -128,8 +130,8 @@ params:
       title: "Expertise"
       items:
         - "Formal Verification (Coq/Rocq)"
-        - "Reg-Tech & Compliance"
         - "Market-Surveillance Systems"
+        - "Reg-Tech & Compliance"
         - "Python, R, OCaml"
         - "ML in Finance"
         - "Risk Analytics"
@@ -144,14 +146,17 @@ params:
         content: "Design and deliver executive programmes on quantitative finance, data analysis and ML in capital markets."
       - job: "Analytics Consultant"
         company: "Decimal Point Analytics"
+        companyUrl: "https://decimalpointanalytics.com/"
         date: "2020–2024"
         content: "Led machine-learning engagements for market-manipulation detection and credit-risk modelling."
       - job: "Research Scholar"
         company: "Tata Institute of Fundamental Research (TIFR)"
+        companyUrl: "https://www.tcs.tifr.res.in/web/"
         date: "2012–2017"
-        content: "PhD research on verified exchange-matching algorithms; 25 k+ lines Coq code, 6 premier conference papers."
+	content: "PhD research on verified exchange-matching algorithms; 25 k+ lines Coq code, 6 premier venue papers."
       - job: "Research Analyst"
         company: "Bank of America"
+        companyUrl: "https://www.ml.com/wealthmanagement.html"
         date: "2006–2009"
         content: "Developed/back-tested quantitative derivatives-pricing and risk-analytics models."
 
@@ -169,12 +174,35 @@ params:
           name: "Tata Institute of Fundamental Research (TIFR), Mumbai"
           url: "https://www.tifr.res.in"
         date: "2015"
-        content: "conflict-free colouring of guards in polygons"
+        content: "Conflict-free colouring of guards in polygons"
       - title: "M.Sc. in Applied Statistics"
         school:
           name: "Indian Institute of Technology (IIT), Mumbai"
           url: "https://www.iitb.ac.in"
         date: "2005"
+	content: "Wavelet methods in time series"
+
+  publications:
+    enable: true
+    items:
+      - title: "PhD in Computer Science"
+        school:
+          name: "Tata Institute of Fundamental Research (TIFR), Mumbai"
+          url: "https://www.tifr.res.in"
+        date: "2024"
+        content: "A Formal Approach to Exchange Design and Regulation"
+      - title: "M.Sc. in Computer Science"
+        school:
+          name: "Tata Institute of Fundamental Research (TIFR), Mumbai"
+          url: "https://www.tifr.res.in"
+        date: "2015"
+        content: "Conflict-free colouring of guards in polygons"
+      - title: "M.Sc. in Applied Statistics"
+        school:
+          name: "Indian Institute of Technology (IIT), Mumbai"
+          url: "https://www.iitb.ac.in"
+        date: "2005"
+	content: "Wavelet methods in time series"
 
   projects:
     enable: true
@@ -198,10 +226,10 @@ params:
         image: /images/achievement.png
       - title: "500+ Professionals Trained"
         content: "RBI, SEBI, NSE, BSE and major banks."
-        image: /images/achievement.jpg
+        image: /images/training.png
       - title: "Study Group Mathematics with Industry"
-        content: "Invited participant, Eindhoven University of Technology."
-        image: /images/achievement.jpg
+        content: "Invited participant, Eindhoven University of Technology (TU/e)."
+        image: /images/tue.png
 
   contact:
     enable: true
