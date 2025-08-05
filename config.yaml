@@ -98,7 +98,7 @@ params:
     title: "Dr. Suneel Sarswat"
     subtitle: "Formal Verification • Regulatory Technology • Quantitative Finance"
     content: "I build mathematically-verified compliance tools for financial markets."
-    image: /images/hero.svg
+    image: images/me.jpg
     bottomImage:
       enable: true
     button:
@@ -181,21 +181,21 @@ params:
     items:
       - title: "Verified Exchange-Log Checker"
         content: "World’s first fully-verified compliance checker for exchange matching. 25 k+ lines Coq code, tested on real Indian exchange data."
-        image: /images/projects/checker.jpg
-        badges: ["Coq/Rocq", "OCaml", "Formal Methods"]
+        image: /images/checker.png
+        badges: ["RegTech", "Coq/Rocq", "Formal Methods", "OCaml"]
       - title: "SEBI Market-Manipulation Detector"
         content: "Clustering-based ML pipeline integrated into SEBI surveillance systems."
-        badges: ["Python", "Scikit-learn", "BigQuery"]
+        badges: ["Spectral Clustering", "Trade Logs", "Colluding Groups"]
       - title: "Credit-Rating-Agency Policy Report"
         content: "Policy paper delivered to the Ministry of Finance with neural-network evaluation framework."
-        badges: ["Policy", "Neural Networks", "Python"]
+        badges: ["Policy", "Neural Networks", "Credit Ratings"]
 
   achievements:
     enable: true
     items:
       - title: "ACM Second Prize – SRC"
         content: "International Conference on Functional Programming (2020)."
-        image: /images/achievement.jpg
+        image: /images/achievement.png
       - title: "500+ Professionals Trained"
         content: "RBI, SEBI, NSE, BSE and major banks."
         image: /images/achievement.jpg
@@ -214,7 +214,7 @@ params:
       path: "blogs"
       count: 3
       title: Recent Posts
-      enable: true
+      enable: false
     socialNetworks:
       github: "https://github.com/suneel-sarswat"
       linkedin: "https://www.linkedin.com/in/suneel-sarswat-3398a86/"
