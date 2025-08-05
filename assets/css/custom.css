@@ -1,0 +1,7 @@
+/* Hero title and subtitle */
+.hero-container .hero-title {
+  font-size: 3rem;           /* Dr. Suneel Sarswat */
+}
+.hero-container .hero-subtitle {
+  font-size: 1.25rem;        /* Formal Verification … */
+}

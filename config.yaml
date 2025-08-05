@@ -96,7 +96,6 @@ params:
     - projects
     - achievements
     - contact
-
   hero:
     enable: true
     intro: "Hello, I’m"
@@ -219,3 +218,13 @@ params:
   footer:
     recentPosts:
       enable: false
+
+  customCSS:
+    - "/css/custom.css"
+  
+      
+      
+      
+      
+      
+      
