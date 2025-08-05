@@ -1,7 +1,7 @@
 baseURL: "https://suneel-sarswat.github.io"
 languageCode: "en-us"
 title: "Dr. Suneel Sarswat"
-theme: hugo-profile
+theme: hugo-profile"
 
 outputs:
   home: ["HTML","RSS","JSON"]
@@ -30,7 +30,7 @@ Menus:
       weight: 2
     - identifier: publications
       name: Publications
-      title: Research papers (BibTeX)
+      title: Research papers
       url: /publications
       weight: 3
 
@@ -96,35 +96,35 @@ params:
     - projects
     - achievements
     - contact
+
   hero:
     enable: true
     intro: "Hello, I’m"
     title: "Dr. Suneel Sarswat"
     subtitle: "Formal Verification • Regulatory Technology • Quantitative Finance"
     content: "I build mathematically-verified compliance tools for financial markets."
-    image: images/me.jpg
+    image: /images/me.jpg
     bottomImage:
       enable: true
     button:
-      enable: true
-      name: "About & CV"
-      url: "/about"
-      download: false
-      newPage: false
+      enable: false
     socialLinks:
       fontAwesomeIcons:
+        - icon: fab fa-envelope
+          url: "mailto:suneel.sarswat@gmail.com"
         - icon: fab fa-github
           url: "https://github.com/suneel-sarswat"
         - icon: fab fa-linkedin
           url: "https://linkedin.com/in/suneel-sarswat"
-        - icon: fab fa-twitter
-          url: "https://twitter.com/suneel_sarswat"
+        - icon: ai ai-google-scholar
+          url: "https://scholar.google.com/citations?user=YOUR_ID"
 
   about:
     enable: true
     title: "About Me"
-    content: |-
-      Dr. Suneel Sarswat is a computer-scientist and regulatory-technology expert specialising in formal verification of financial systems.  His PhD work at TIFR produced the world’s first fully-verified exchange-matching compliance checker (25 000+ lines of Rocq code) and six top-tier publications.  He has consulted for the Ministry of Finance and SEBI on market-surveillance algorithms and has trained 500+ regulators and bankers in advanced analytics.
+    content: |
+      Dr. Suneel Sarswat is a computer scientist and regulatory-technology expert specialising in formal verification of financial systems.  His PhD work at TIFR produced the world’s first fully-verified exchange-matching compliance checker (25 000+ lines of Rocq code) and six top-tier publications.  He has consulted for the Ministry of Finance and SEBI on market-surveillance algorithms and has trained 500+ regulators and bankers in advanced analytics.
+
     skills:
       enable: true
       title: "Expertise"
@@ -221,10 +221,3 @@ params:
 
   customCSS:
     - "/css/custom.css"
-  
-      
-      
-      
-      
-      
-      
