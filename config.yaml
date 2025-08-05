@@ -20,21 +20,20 @@ Menus:
   main:
     - identifier: blog
       name: Blog
+      title: Latest posts
       url: /blogs
       weight: 1
-    - identifier: gallery
-      name: Gallery
-      url: /gallery
-      weight: 2
     - identifier: about
-      name: Full About
+      name: CV / About
+      title: Full bio & CV download
       url: /about
-      weight: 3
+      weight: 2
 
 params:
   title: "Dr. Suneel Sarswat"
-  description: "Formal Verification • Financial Systems  • Quantitative Finance and ML"
+  description: "Formal Verification • Regulatory Technology • Quantitative Finance"
   favicon: "/favicon.ico"
+  backgroundDots: true   # to removes the 16 '+' dots, make this false
 
   useBootstrapCDN: false
   mathjax: true
@@ -98,16 +97,16 @@ params:
     intro: "Hello, I’m"
     title: "Dr. Suneel Sarswat"
     subtitle: "Formal Verification • Regulatory Technology • Quantitative Finance"
-    content: "I bridge rigorous theory and live-market reality through verified software and regulatory consulting."
+    content: "I build mathematically-verified compliance tools for financial markets."
     image: /images/hero.svg
     bottomImage:
       enable: true
     button:
       enable: true
-      name: "CV"
-      url: "/files/cv.pdf"
-      download: true
-      newPage: true
+      name: "About & CV"
+      url: "/about"
+      download: false
+      newPage: false
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
@@ -122,17 +121,18 @@ params:
     title: "About Me"
     image: "/images/me.jpg"
     content: |-
-      Dr. Suneel Sarswat is a computer scientist and quantitative-finance expert specialising in the formal verification of financial systems. His PhD research at TIFR produced the first fully-verified checker for exchange logs and six top-tier publications. He has consulted for the Ministry of Finance and SEBI on regulatory technology and has trained 500+ professionals from RBI, SEBI, NSE and BSE in advanced analytics and fraud-detection techniques.
+      Dr. Suneel Sarswat is a computer-scientist and regulatory-technology expert specialising in formal verification of financial systems.  His PhD work at TIFR produced the world’s first fully-verified exchange-matching compliance checker (25 000+ lines of Rocq code) and six top-tier publications.  He has consulted for the Ministry of Finance and SEBI on market-surveillance algorithms and has trained 500+ regulators and bankers in advanced analytics.
+
     skills:
       enable: true
       title: "Expertise"
       items:
-        - "Trading system at exchanges"
-        - "Formal Verification (Rocq/Coq)"
-        - "Double auctions"
+        - "Formal Verification (Coq/Rocq)"
+        - "Reg-Tech & Compliance"
         - "Market-Surveillance Systems"
-        - "Machine Learning in Finance"
-        - "Quantitative Risk Analytics"
+        - "Python, R, OCaml"
+        - "ML in Finance"
+        - "Risk Analytics"
 
   experience:
     enable: true
@@ -140,17 +140,20 @@ params:
       - job: "Adjunct Faculty"
         company: "National Institute of Securities Markets (NISM)"
         companyUrl: "https://www.nism.ac.in"
-        date: "2012 – Present"
-        content: "Design and deliver executive programmes on quantitative finance and machine-learning applications in capital markets."
+        date: "2009–2012, 2019–Present"
+        content: "Design and deliver executive programmes on quantitative finance, data analysis and ML in capital markets."
       - job: "Analytics Consultant"
-        company: "Private Analytics Firms"
-        date: "2020 – 2024"
-        content: "Guide machine-learning engineers team on client projects."
+        company: "Decimal Point Analytics"
+        date: "2020–2024"
+        content: "Led machine-learning engagements for market-manipulation detection and credit-risk modelling."
+      - job: "Research Scholar"
+        company: "Tata Institute of Fundamental Research (TIFR)"
+        date: "2012–2017"
+        content: "PhD research on verified exchange-matching algorithms; 25 k+ lines Coq code, 6 premier conference papers."
       - job: "Research Analyst"
         company: "Bank of America"
-        companyUrl: "https://www.bankofamerica.com"
-        date: "2006 – 2009"
-        content: "Developed quantitative models for derivatives pricing and risk analytics."
+        date: "2006–2009"
+        content: "Developed/back-tested quantitative derivatives-pricing and risk-analytics models."
 
   education:
     enable: true
@@ -160,12 +163,13 @@ params:
           name: "Tata Institute of Fundamental Research (TIFR), Mumbai"
           url: "https://www.tifr.res.in"
         date: "2024"
-        content: "Dissertation: Formal Verification of Financial Systems"
-      - title: "M.S. in Computer Science"
+        content: "A Formal Approach to Exchange Design and Regulation"
+      - title: "M.Sc. in Computer Science"
         school:
           name: "Tata Institute of Fundamental Research (TIFR), Mumbai"
           url: "https://www.tifr.res.in"
         date: "2015"
+        content: "conflict-free colouring of guards in polygons"
       - title: "M.Sc. in Applied Statistics"
         school:
           name: "Indian Institute of Technology (IIT), Mumbai"
@@ -176,14 +180,11 @@ params:
     enable: true
     items:
       - title: "Verified Exchange-Log Checker"
-        content: "25 000+ lines Rocq implementation; first fully-verified checker for real-world exchange logs."
+        content: "World’s first fully-verified compliance checker for exchange matching. 25 k+ lines Coq code, tested on real Indian exchange data."
         image: /images/projects/checker.jpg
-        badges: ["Rocq/Coq", "OCaml", "Formal Methods"]
-        links:
-          - icon: fab fa-github
-            url: "https://github.com/suneel-sarswat/exchange-checker"
+        badges: ["Coq/Rocq", "OCaml", "Formal Methods"]
       - title: "SEBI Market-Manipulation Detector"
-        content: "Clustering-based ML pipeline deployed as part of SEBI’s surveillance system."
+        content: "Clustering-based ML pipeline integrated into SEBI surveillance systems."
         badges: ["Python", "Scikit-learn", "BigQuery"]
       - title: "Credit-Rating-Agency Policy Report"
         content: "Policy paper delivered to the Ministry of Finance with neural-network evaluation framework."
@@ -192,14 +193,14 @@ params:
   achievements:
     enable: true
     items:
-      - title: "Top-Tier Publications"
-        content: "Co-authored 6 papers at premier CS conferences (CAV, FM, TACAS)."
-        image: /images/achievement.jpg
-      - title: "Study Group Mathematics with Industry"
-        content: "Invited participant at Eindhoven University of Technology."
+      - title: "ACM Second Prize – SRC"
+        content: "International Conference on Functional Programming (2020)."
         image: /images/achievement.jpg
       - title: "500+ Professionals Trained"
-        content: "Designed curricula for RBI, SEBI, NSE, BSE and major banks."
+        content: "RBI, SEBI, NSE, BSE and major banks."
+        image: /images/achievement.jpg
+      - title: "Study Group Mathematics with Industry"
+        content: "Invited participant, Eindhoven University of Technology."
         image: /images/achievement.jpg
 
   contact:
@@ -217,4 +218,11 @@ params:
     socialNetworks:
       github: "https://github.com/suneel-sarswat"
       linkedin: "https://www.linkedin.com/in/suneel-sarswat-3398a86/"
-      twitter: "https://twitter.com/"
+
+
+  singlePages:
+    scrollprogress:
+      enable: true   # keeps the thin scroll bar
+    readTime:
+      enable: true
+      content: "min read"
